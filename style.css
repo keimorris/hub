@@ -1,0 +1,10 @@
+img {width:100%; 
+}
+table {width:100%;
+}
+td, th, table {border:solid 2px black;
+}
+td {text-align: center; width: 150px;
+}
+body {background-color: beige;
+}
