@@ -8,3 +8,35 @@ td {text-align: center; width: 150px;
 }
 body {background-color: beige;
 }
+.navigation{
+	background-color: #333333;
+	grid-column-start: 2;
+	grid-column-end: 9;
+}
+.menulist {list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	grid-column-start: 2;
+	grid-column-end: 9;
+}
+.menuitem {float: left;	
+}
+.menuitem .menulink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.menuitem .menulink:hover {
+  background-color: #111111;
+}
+.grid {display: grid;
+	grid-template-columns: 100px auto auto auto auto auto auto auto 100px;
+	gap: 10px
+}
+.griditem {
+	grid-column-start: 2;
+	grid-column-end: 9;
+}
