@@ -45,6 +45,7 @@ body {background-color: beige;
 }
 .gallery {	
 	flex-flow: row wrap;
+	justify-content: center;
 	background-color: darkgrey;
 	border:solid 2px black;
 	padding: 5px;
@@ -53,39 +54,52 @@ body {background-color: beige;
 	background-color: grey;
 	margin: 5px;
 	padding: 5px;
-	width: 200px;
+	width: 250px;
 }
 .mycat-table {
 	flex-flow: row wrap;
+	justify-content: center;
 	border:solid 2px rgba(0, 0, 0, 0.8);
 	background-color: #b3d9ff;
 	padding: 10px;
 	margin: 10px;
-	width: 40%;
-	float: left;
+	/*width: 80%;
+	float: left;*/
+}
+.mycat-table > div {
+	border:solid 2px rgba(0, 0, 0, 0.8);
+	margin: 2px;
+	padding: 2px;
+	width: auto;
 }
 .mycat-table > div > div {
 	border:solid 2px rgba(0, 0, 0, 0.8);
-	margin: 5px;
-	padding: 5px;
-	width: 100px;
+	padding: 3px;
 }
 .description {
-	flex-flow: column wrap;
-	border:solid 2px rgba(0, 0, 0, 0.8);
-	background-color: #b3d9ff;
-	padding: 10px;
-	margin: 10px;
+	flex-flow: row wrap;
+	justify-content: center;
+	/*border:solid 2px rgba(0, 0, 0, 0.8);*/
+	/*background-color: #b3d9ff;
+	padding: 2px;
+	margin: 2px;
 	margin-left: 0px;
 	width: 40%;
-	float: left;
+	float: left;*/
 }
 .description > div {
 	border:solid 2px rgba(0, 0, 0, 0.8);
-	margin: 5px;
-	padding: 5px;
-	width: 100px;
+	margin: 1px;
+	padding: 2px;
+	width: auto;
 }
-footer {
+#flex-header {
+	width: 100%;
+	text-align: center;
+}
+section {
 	clear: both;
+}
+.section1 > h1 {
+text-align: center;
 }
