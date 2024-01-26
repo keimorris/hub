@@ -33,10 +33,59 @@ body {background-color: beige;
   background-color: #111111;
 }
 .grid {display: grid;
-	grid-template-columns: 100px auto auto auto auto auto auto auto 100px;
+	grid-template-columns: 11% auto auto auto auto auto auto auto 11%;
 	gap: 10px
 }
 .griditem {
 	grid-column-start: 2;
 	grid-column-end: 9;
+}
+.flex-container{
+	display: flex;
+}
+.gallery {	
+	flex-flow: row wrap;
+	background-color: darkgrey;
+	border:solid 2px black;
+	padding: 5px;
+}
+.gallery > div {
+	background-color: grey;
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+}
+.mycat-table {
+	flex-flow: row wrap;
+	border:solid 2px rgba(0, 0, 0, 0.8);
+	background-color: #b3d9ff;
+	padding: 10px;
+	margin: 10px;
+	width: 40%;
+	float: left;
+}
+.mycat-table > div > div {
+	border:solid 2px rgba(0, 0, 0, 0.8);
+	margin: 5px;
+	padding: 5px;
+	width: 100px;
+}
+.description {
+	flex-flow: column wrap;
+	border:solid 2px rgba(0, 0, 0, 0.8);
+	background-color: #b3d9ff;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 0px;
+	width: 40%;
+	float: left;
+}
+.description > div {
+	border:solid 2px rgba(0, 0, 0, 0.8);
+	margin: 5px;
+	padding: 5px;
+	width: 100px;
+}
+footer {
+	clear: both;
 }
